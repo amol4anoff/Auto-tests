@@ -1,0 +1,138 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>SSH.Mac(Chrome).sikuli</h2> <a href="SSH.Mac(Chrome).zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="skw">click</span>(Pattern(<img src="1518860545657.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">2</span>))
+<span class="skw">wait</span>(<span class="dig">4</span>)
+<span class="skw">type</span>(Pattern(<img src="1518862042812.png" />).targetOffset(<span class="dig">1</span>,<span class="dig">1</span>), <span class="str">"cd .ssh"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518862391544.png" />).targetOffset(<span class="dig">1</span>,-<span class="dig">1</span>), <span class="str">"ssh-keygen -t rsa"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518862558597.png" />).targetOffset(<span class="dig">172</span>,-<span class="dig">1</span>), <span class="str">"anton"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518862625558.png" />).targetOffset(<span class="dig">79</span>,-<span class="dig">1</span>), <span class="str">"anton"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">type</span>(Pattern(<img src="1518862692834.png" />).targetOffset(<span class="dig">39</span>,<span class="dig">0</span>), <span class="str">"anton"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518863133634.png" />).targetOffset(-<span class="dig">1</span>,<span class="dig">0</span>), <span class="str">"cd"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518863235707.png" />).targetOffset(-<span class="dig">5</span>,<span class="dig">1</span>), <span class="str">"open .ssh"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">rightClick</span>(Pattern(<img src="1518863753876.png" />).targetOffset(<span class="dig">0</span>,-<span class="dig">7</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+hover(Pattern(<img src="1518863827497.png" />).targetOffset(-<span class="dig">56</span>,<span class="dig">0</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(Pattern(<img src="1518863936095.png" />).targetOffset(-<span class="dig">42</span>,<span class="dig">0</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">type</span>(Pattern(<img src="1518871567228.png" />).targetOffset(-<span class="dig">30</span>,<span class="dig">1</span>), <span class="str">"textedit"</span>)
+<span class="skw">wait</span>(<span class="dig">4</span>)
+<span class="skw">doubleClick</span>(Pattern(<img src="1518871620768.png" />).targetOffset(-<span class="dig">5</span>,<span class="dig">5</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">type</span>(Pattern(<img src="1518871250548.png" />).targetOffset(<span class="dig">1</span>,<span class="dig">9</span>), <span class="str">"a"</span> ,KEY_CMD)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518871274455.png" />).targetOffset(<span class="dig">1</span>,<span class="dig">9</span>), <span class="str">"c"</span> ,KEY_CMD)
+<span class="skw">wait</span>(<span class="dig">4</span>)
+App.open(<span class="str">"Google Chrome.app"</span>)
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">type</span>(Pattern(<img src="1518865781219.png" />).targetOffset(-<span class="dig">166</span>,<span class="dig">0</span>), <span class="str">"https://masterhub.subut.ai/login"</span> + Key.ENTER)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518865981122.png" />).targetOffset(-<span class="dig">107</span>,<span class="dig">0</span>), <span class="str">"ant.silent@mail.ru"</span>)
+<span class="skw">wait</span>(<span class="dig">1</span>)
+<span class="skw">click</span>(Pattern(<img src="1518866161480.png" />).targetOffset(-<span class="dig">80</span>,<span class="dig">2</span>))
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518866018540.png" />).targetOffset(-<span class="dig">100</span>,<span class="dig">0</span>), <span class="str">"Ab123456"</span>)
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(Pattern(<img src="1518866057680.png" />).targetOffset(-<span class="dig">5</span>,<span class="dig">2</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(Pattern(<img src="1518866242880.png" />).targetOffset(<span class="dig">3</span>,<span class="dig">4</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(Pattern(<img src="1518866281861.png" />).targetOffset(-<span class="dig">28</span>,<span class="dig">3</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(Pattern(<img src="1518866342758.png" />).targetOffset(-<span class="dig">1</span>,<span class="dig">3</span>))
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Pattern(<img src="1518867062462.png" />).targetOffset(-<span class="dig">109</span>,-<span class="dig">65</span>), <span class="str">"v"</span> ,KEY_CMD)
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">click</span>(Pattern(<img src="1518867164975.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">1</span>))
+<span class="skw">wait</span>(<span class="dig">3</span>)
+<span class="skw">click</span>(<img src="1518867512029.png" />)
+<span class="skw">wait</span>(<span class="dig">8</span>)
+<span class="skw">click</span>(Pattern(<img src="1518867567942.png" />).targetOffset(<span class="dig">1</span>,<span class="dig">3</span>))
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">click</span>(Pattern(<img src="1518867848588.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">4</span>))
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">click</span>(Pattern(<img src="1518867890675.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">1</span>))
+<span class="skw">wait</span>(<span class="dig">6</span>)
+<span class="skw">click</span>(Pattern(<img src="1518867957759.png" />).targetOffset(-<span class="dig">1</span>,<span class="dig">1</span>))
+<span class="skw">wait</span>(<span class="dig">2</span>)
+<span class="skw">click</span>(Pattern(<img src="1518867984546.png" />).targetOffset(<span class="dig">1</span>,<span class="dig">1</span>))
+</pre>
+</body>
+</html>
